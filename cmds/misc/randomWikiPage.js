@@ -17,5 +17,4 @@ module.exports = class randomWikiPage extends Commando.Command{
         .then(data => message.reply(`https://en.wikipedia.org/wiki/${data.query.random[0].title.replace(/\s/g,'_')}`))
         
     }
-
 }
